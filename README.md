@@ -1,7 +1,7 @@
 <br>
 
 <p align="center">
-<img src="./HUST.png" alt="logo" height="150"/>
+<img src="./HUST.png" alt="logo" height="300"/>
 </p>
 
 <h1 align="center">
