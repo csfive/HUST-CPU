@@ -2946,23 +2946,10 @@ This file is intended to be loaded by Logisim http://logisim.altervista.org
     <wire from="(80,40)" to="(180,40)"/>
     <wire from="(640,10)" to="(640,110)"/>
     <wire from="(270,60)" to="(340,60)"/>
-    <wire from="(240,200)" to="(300,200)"/>
-    <wire from="(330,190)" to="(400,190)"/>
-    <wire from="(330,260)" to="(360,260)"/>
-    <wire from="(360,210)" to="(360,260)"/>
-    <wire from="(360,210)" to="(400,210)"/>
-    <wire from="(430,200)" to="(470,200)"/>
-    <wire from="(240,270)" to="(290,270)"/>
-    <wire from="(240,200)" to="(240,270)"/>
-    <wire from="(240,270)" to="(240,310)"/>
-    <wire from="(190,250)" to="(300,250)"/>
-    <wire from="(190,180)" to="(300,180)"/>
-    <comp lib="0" loc="(190,250)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="1"/>
-      <a name="label" val="X0"/>
-      <a name="labelfont" val="Dialog plain 12"/>
-    </comp>
+    <wire from="(300,190)" to="(430,190)"/>
+    <wire from="(280,210)" to="(280,310)"/>
+    <wire from="(190,180)" to="(270,180)"/>
+    <wire from="(190,200)" to="(270,200)"/>
     <comp lib="6" loc="(325,128)" name="Text">
       <a name="text" val="请勿增删改引脚，请在下方利用上方输入输出引脚的隧道标签信号构建电路，ctrl+d复制选择组件"/>
       <a name="font" val="Dialog plain 12"/>
@@ -2970,23 +2957,19 @@ This file is intended to be loaded by Logisim http://logisim.altervista.org
       <a name="halign" val="center"/>
       <a name="valign" val="base"/>
     </comp>
-    <comp lib="0" loc="(470,200)" name="Tunnel">
-      <a name="facing" val="west"/>
-      <a name="width" val="1"/>
-      <a name="label" val="Out"/>
-      <a name="labelfont" val="Dialog plain 12"/>
-    </comp>
     <comp lib="0" loc="(180,80)" name="Tunnel">
       <a name="facing" val="west"/>
       <a name="width" val="1"/>
       <a name="label" val="X1"/>
       <a name="labelfont" val="Dialog plain 12"/>
     </comp>
-    <comp lib="0" loc="(240,310)" name="Tunnel">
-      <a name="facing" val="north"/>
+    <comp lib="2" loc="(300,190)" name="Multiplexer">
+      <a name="facing" val="east"/>
+      <a name="selloc" val="bl"/>
+      <a name="select" val="1"/>
       <a name="width" val="1"/>
-      <a name="label" val="Sel"/>
-      <a name="labelfont" val="Dialog plain 12"/>
+      <a name="disabled" val="Z"/>
+      <a name="enable" val="false"/>
     </comp>
     <comp lib="0" loc="(510,60)" name="Tunnel">
       <a name="facing" val="east"/>
@@ -3012,35 +2995,23 @@ This file is intended to be loaded by Logisim http://logisim.altervista.org
       <a name="labelfont" val="Dialog plain 12"/>
       <a name="labelcolor" val="#000000"/>
     </comp>
+    <comp lib="0" loc="(280,310)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="width" val="1"/>
+      <a name="label" val="Sel"/>
+      <a name="labelfont" val="Dialog plain 12"/>
+    </comp>
     <comp lib="0" loc="(180,40)" name="Tunnel">
       <a name="facing" val="west"/>
       <a name="width" val="1"/>
       <a name="label" val="X0"/>
       <a name="labelfont" val="Dialog plain 12"/>
     </comp>
-    <comp lib="1" loc="(330,260)" name="AND Gate">
+    <comp lib="0" loc="(190,180)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="width" val="1"/>
-      <a name="size" val="30"/>
-      <a name="inputs" val="2"/>
-      <a name="out" val="01"/>
-      <a name="label" val=""/>
+      <a name="label" val="X0"/>
       <a name="labelfont" val="Dialog plain 12"/>
-      <a name="labelcolor" val="#000000"/>
-      <a name="negate0" val="false"/>
-      <a name="negate1" val="true"/>
-    </comp>
-    <comp lib="1" loc="(330,190)" name="AND Gate">
-      <a name="facing" val="east"/>
-      <a name="width" val="1"/>
-      <a name="size" val="30"/>
-      <a name="inputs" val="2"/>
-      <a name="out" val="01"/>
-      <a name="label" val=""/>
-      <a name="labelfont" val="Dialog plain 12"/>
-      <a name="labelcolor" val="#000000"/>
-      <a name="negate0" val="false"/>
-      <a name="negate1" val="false"/>
     </comp>
     <comp lib="0" loc="(270,60)" name="Pin">
       <a name="facing" val="east"/>
@@ -3064,7 +3035,7 @@ This file is intended to be loaded by Logisim http://logisim.altervista.org
       <a name="labelfont" val="Dialog plain 12"/>
       <a name="labelcolor" val="#000000"/>
     </comp>
-    <comp lib="0" loc="(190,180)" name="Tunnel">
+    <comp lib="0" loc="(190,200)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="width" val="1"/>
       <a name="label" val="X1"/>
@@ -3101,17 +3072,11 @@ This file is intended to be loaded by Logisim http://logisim.altervista.org
       <a name="halign" val="center"/>
       <a name="valign" val="base"/>
     </comp>
-    <comp lib="1" loc="(430,200)" name="OR Gate">
-      <a name="facing" val="east"/>
+    <comp lib="0" loc="(430,190)" name="Tunnel">
+      <a name="facing" val="west"/>
       <a name="width" val="1"/>
-      <a name="size" val="30"/>
-      <a name="inputs" val="2"/>
-      <a name="out" val="01"/>
-      <a name="label" val=""/>
+      <a name="label" val="Out"/>
       <a name="labelfont" val="Dialog plain 12"/>
-      <a name="labelcolor" val="#000000"/>
-      <a name="negate0" val="false"/>
-      <a name="negate1" val="false"/>
     </comp>
   </circuit>
   <circuit name="2路选择器（16位）">
