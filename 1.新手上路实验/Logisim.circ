@@ -6569,6 +6569,63 @@ bcbfcf4f 303557a5 c33fe7d1 5a8cbd9f 72e5a6e 180cb2c6 9313a6e2 c5fc7c97
     <wire from="(190,30)" to="(230,30)"/>
     <wire from="(320,70)" to="(360,70)"/>
     <wire from="(360,70)" to="(400,70)"/>
+    <wire from="(230,280)" to="(230,350)"/>
+    <wire from="(630,390)" to="(630,530)"/>
+    <wire from="(630,280)" to="(630,350)"/>
+    <wire from="(400,280)" to="(400,300)"/>
+    <wire from="(490,390)" to="(490,410)"/>
+    <wire from="(230,390)" to="(230,410)"/>
+    <wire from="(410,230)" to="(410,260)"/>
+    <wire from="(210,440)" to="(210,530)"/>
+    <wire from="(240,440)" to="(240,470)"/>
+    <wire from="(300,370)" to="(300,460)"/>
+    <wire from="(350,440)" to="(350,530)"/>
+    <wire from="(670,390)" to="(670,560)"/>
+    <wire from="(530,390)" to="(530,560)"/>
+    <wire from="(230,280)" to="(390,280)"/>
+    <wire from="(560,370)" to="(580,370)"/>
+    <wire from="(560,370)" to="(560,480)"/>
+    <wire from="(600,390)" to="(600,500)"/>
+    <wire from="(460,390)" to="(460,500)"/>
+    <wire from="(220,440)" to="(220,480)"/>
+    <wire from="(200,390)" to="(200,500)"/>
+    <wire from="(360,440)" to="(360,480)"/>
+    <wire from="(270,390)" to="(270,560)"/>
+    <wire from="(500,440)" to="(500,480)"/>
+    <wire from="(430,370)" to="(440,370)"/>
+    <wire from="(350,350)" to="(360,350)"/>
+    <wire from="(360,300)" to="(360,350)"/>
+    <wire from="(400,560)" to="(530,560)"/>
+    <wire from="(350,530)" to="(480,530)"/>
+    <wire from="(530,560)" to="(670,560)"/>
+    <wire from="(200,500)" to="(330,500)"/>
+    <wire from="(370,470)" to="(430,470)"/>
+    <wire from="(500,480)" to="(560,480)"/>
+    <wire from="(210,530)" to="(210,600)"/>
+    <wire from="(250,460)" to="(300,460)"/>
+    <wire from="(360,390)" to="(360,410)"/>
+    <wire from="(410,280)" to="(410,300)"/>
+    <wire from="(250,440)" to="(250,460)"/>
+    <wire from="(370,440)" to="(370,470)"/>
+    <wire from="(360,300)" to="(400,300)"/>
+    <wire from="(480,440)" to="(480,530)"/>
+    <wire from="(430,370)" to="(430,470)"/>
+    <wire from="(420,280)" to="(630,280)"/>
+    <wire from="(330,390)" to="(330,500)"/>
+    <wire from="(270,560)" to="(270,600)"/>
+    <wire from="(400,390)" to="(400,560)"/>
+    <wire from="(600,500)" to="(600,600)"/>
+    <wire from="(480,530)" to="(630,530)"/>
+    <wire from="(360,480)" to="(500,480)"/>
+    <wire from="(300,370)" to="(310,370)"/>
+    <wire from="(460,500)" to="(600,500)"/>
+    <wire from="(490,300)" to="(490,350)"/>
+    <wire from="(410,300)" to="(490,300)"/>
+    <wire from="(210,530)" to="(350,530)"/>
+    <wire from="(220,480)" to="(360,480)"/>
+    <wire from="(270,560)" to="(400,560)"/>
+    <wire from="(330,500)" to="(460,500)"/>
+    <wire from="(240,470)" to="(370,470)"/>
     <comp lib="6" loc="(60,32)" name="Text">
       <a name="text" val="输入引脚区"/>
       <a name="font" val="SansSerif bold 12"/>
@@ -6587,33 +6644,16 @@ bcbfcf4f 303557a5 c33fe7d1 5a8cbd9f 72e5a6e 180cb2c6 9313a6e2 c5fc7c97
       <a name="labelfont" val="Dialog plain 12"/>
       <a name="labelcolor" val="#000000"/>
     </comp>
+    <comp lib="0" loc="(210,600)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="width" val="1"/>
+      <a name="label" val="En"/>
+      <a name="labelfont" val="Dialog plain 12"/>
+    </comp>
     <comp lib="0" loc="(230,90)" name="Tunnel">
       <a name="facing" val="west"/>
       <a name="width" val="1"/>
       <a name="label" val="Rst"/>
-      <a name="labelfont" val="Dialog plain 12"/>
-    </comp>
-    <comp lib="0" loc="(400,70)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="width" val="16"/>
-      <a name="tristate" val="true"/>
-      <a name="pull" val="none"/>
-      <a name="label" val="输出Q"/>
-      <a name="labelloc" val="east"/>
-      <a name="labelfont" val="Dialog plain 12"/>
-      <a name="labelcolor" val="#000000"/>
-    </comp>
-    <comp lib="0" loc="(230,30)" name="Tunnel">
-      <a name="facing" val="west"/>
-      <a name="width" val="1"/>
-      <a name="label" val="CLK"/>
-      <a name="labelfont" val="Dialog plain 12"/>
-    </comp>
-    <comp lib="0" loc="(320,70)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="16"/>
-      <a name="label" val="Q"/>
       <a name="labelfont" val="Dialog plain 12"/>
     </comp>
     <comp lib="0" loc="(240,60)" name="Tunnel">
@@ -6622,9 +6662,8 @@ bcbfcf4f 303557a5 c33fe7d1 5a8cbd9f 72e5a6e 180cb2c6 9313a6e2 c5fc7c97
       <a name="label" val="En"/>
       <a name="labelfont" val="Dialog plain 12"/>
     </comp>
-    <comp lib="0" loc="(360,50)" name="Probe">
-      <a name="facing" val="south"/>
-      <a name="radix" val="10unsigned"/>
+    <comp loc="(620,370)" name="4位BCD计数器">
+      <a name="facing" val="east"/>
       <a name="label" val=""/>
       <a name="labelloc" val="north"/>
       <a name="labelfont" val="Dialog plain 12"/>
@@ -6648,6 +6687,12 @@ bcbfcf4f 303557a5 c33fe7d1 5a8cbd9f 72e5a6e 180cb2c6 9313a6e2 c5fc7c97
       <a name="labelfont" val="Dialog plain 12"/>
       <a name="labelcolor" val="#000000"/>
     </comp>
+    <comp lib="0" loc="(410,230)" name="Tunnel">
+      <a name="facing" val="south"/>
+      <a name="width" val="16"/>
+      <a name="label" val="Q"/>
+      <a name="labelfont" val="Dialog plain 12"/>
+    </comp>
     <comp lib="6" loc="(279,128)" name="Text">
       <a name="text" val="码表计数器，16位输出，包括4个BCD计数器，分别对应10秒、1秒、1/10秒、1/100秒。"/>
       <a name="font" val="SansSerif bold 12"/>
@@ -6666,12 +6711,137 @@ bcbfcf4f 303557a5 c33fe7d1 5a8cbd9f 72e5a6e 180cb2c6 9313a6e2 c5fc7c97
       <a name="labelfont" val="Dialog plain 12"/>
       <a name="labelcolor" val="#000000"/>
     </comp>
+    <comp lib="1" loc="(490,410)" name="AND Gate">
+      <a name="facing" val="north"/>
+      <a name="width" val="1"/>
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
+      <a name="out" val="01"/>
+      <a name="label" val=""/>
+      <a name="labelfont" val="Dialog plain 12"/>
+      <a name="labelcolor" val="#000000"/>
+      <a name="negate0" val="false"/>
+      <a name="negate1" val="false"/>
+    </comp>
+    <comp loc="(220,370)" name="4位BCD计数器">
+      <a name="facing" val="east"/>
+      <a name="label" val=""/>
+      <a name="labelloc" val="north"/>
+      <a name="labelfont" val="Dialog plain 12"/>
+      <a name="labelcolor" val="#000000"/>
+    </comp>
+    <comp lib="0" loc="(410,260)" name="Splitter">
+      <a name="facing" val="south"/>
+      <a name="fanout" val="4"/>
+      <a name="incoming" val="16"/>
+      <a name="appear" val="center"/>
+      <a name="bit0" val="0"/>
+      <a name="bit1" val="0"/>
+      <a name="bit2" val="0"/>
+      <a name="bit3" val="0"/>
+      <a name="bit4" val="1"/>
+      <a name="bit5" val="1"/>
+      <a name="bit6" val="1"/>
+      <a name="bit7" val="1"/>
+      <a name="bit8" val="2"/>
+      <a name="bit9" val="2"/>
+      <a name="bit10" val="2"/>
+      <a name="bit11" val="2"/>
+      <a name="bit12" val="3"/>
+      <a name="bit13" val="3"/>
+      <a name="bit14" val="3"/>
+      <a name="bit15" val="3"/>
+    </comp>
+    <comp lib="1" loc="(230,410)" name="AND Gate">
+      <a name="facing" val="north"/>
+      <a name="width" val="1"/>
+      <a name="size" val="30"/>
+      <a name="inputs" val="4"/>
+      <a name="out" val="01"/>
+      <a name="label" val=""/>
+      <a name="labelfont" val="Dialog plain 12"/>
+      <a name="labelcolor" val="#000000"/>
+      <a name="negate0" val="false"/>
+      <a name="negate1" val="false"/>
+      <a name="negate2" val="false"/>
+      <a name="negate3" val="false"/>
+    </comp>
+    <comp lib="0" loc="(600,600)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="width" val="1"/>
+      <a name="label" val="CLK"/>
+      <a name="labelfont" val="Dialog plain 12"/>
+    </comp>
+    <comp lib="0" loc="(400,70)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="16"/>
+      <a name="tristate" val="true"/>
+      <a name="pull" val="none"/>
+      <a name="label" val="输出Q"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="Dialog plain 12"/>
+      <a name="labelcolor" val="#000000"/>
+    </comp>
+    <comp loc="(480,370)" name="4位BCD计数器">
+      <a name="facing" val="east"/>
+      <a name="label" val=""/>
+      <a name="labelloc" val="north"/>
+      <a name="labelfont" val="Dialog plain 12"/>
+      <a name="labelcolor" val="#000000"/>
+    </comp>
+    <comp lib="0" loc="(230,30)" name="Tunnel">
+      <a name="facing" val="west"/>
+      <a name="width" val="1"/>
+      <a name="label" val="CLK"/>
+      <a name="labelfont" val="Dialog plain 12"/>
+    </comp>
+    <comp loc="(350,370)" name="4位BCD计数器">
+      <a name="facing" val="east"/>
+      <a name="label" val=""/>
+      <a name="labelloc" val="north"/>
+      <a name="labelfont" val="Dialog plain 12"/>
+      <a name="labelcolor" val="#000000"/>
+    </comp>
+    <comp lib="0" loc="(320,70)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="16"/>
+      <a name="label" val="Q"/>
+      <a name="labelfont" val="Dialog plain 12"/>
+    </comp>
+    <comp lib="0" loc="(270,600)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="width" val="1"/>
+      <a name="label" val="Rst"/>
+      <a name="labelfont" val="Dialog plain 12"/>
+    </comp>
+    <comp lib="0" loc="(360,50)" name="Probe">
+      <a name="facing" val="south"/>
+      <a name="radix" val="10unsigned"/>
+      <a name="label" val=""/>
+      <a name="labelloc" val="north"/>
+      <a name="labelfont" val="Dialog plain 12"/>
+      <a name="labelcolor" val="#000000"/>
+    </comp>
     <comp lib="6" loc="(279,149)" name="Text">
       <a name="text" val="低位计数到9时，相邻高位在时钟到来时加1。                    En：使能端；Rst：异步复位；"/>
       <a name="font" val="SansSerif bold 12"/>
       <a name="color" val="#000000"/>
       <a name="halign" val="center"/>
       <a name="valign" val="base"/>
+    </comp>
+    <comp lib="1" loc="(360,410)" name="AND Gate">
+      <a name="facing" val="north"/>
+      <a name="width" val="1"/>
+      <a name="size" val="30"/>
+      <a name="inputs" val="3"/>
+      <a name="out" val="01"/>
+      <a name="label" val=""/>
+      <a name="labelfont" val="Dialog plain 12"/>
+      <a name="labelcolor" val="#000000"/>
+      <a name="negate0" val="false"/>
+      <a name="negate1" val="false"/>
+      <a name="negate2" val="false"/>
     </comp>
   </circuit>
   <circuit name="码表计数器自动测试">
@@ -6681,31 +6851,24 @@ bcbfcf4f 303557a5 c33fe7d1 5a8cbd9f 72e5a6e 180cb2c6 9313a6e2 c5fc7c97
     <a name="clabelfont" val="SansSerif plain 12"/>
     <a name="clabelcolor" val="#000000"/>
     <wire from="(160,130)" to="(190,130)"/>
-    <wire from="(210,130)" to="(240,130)"/>
     <wire from="(220,140)" to="(280,140)"/>
     <wire from="(190,130)" to="(190,140)"/>
-    <wire from="(210,130)" to="(210,140)"/>
-    <wire from="(210,160)" to="(210,170)"/>
     <wire from="(210,110)" to="(210,120)"/>
-    <wire from="(270,200)" to="(320,200)"/>
-    <wire from="(100,220)" to="(150,220)"/>
-    <wire from="(100,180)" to="(150,180)"/>
     <wire from="(160,110)" to="(160,130)"/>
     <wire from="(240,110)" to="(240,130)"/>
     <wire from="(280,110)" to="(280,140)"/>
     <wire from="(200,110)" to="(200,140)"/>
-    <comp lib="0" loc="(320,200)" name="Clock">
+    <wire from="(210,130)" to="(240,130)"/>
+    <wire from="(210,130)" to="(210,140)"/>
+    <wire from="(270,230)" to="(320,230)"/>
+    <wire from="(100,250)" to="(150,250)"/>
+    <wire from="(100,210)" to="(150,210)"/>
+    <wire from="(210,160)" to="(210,200)"/>
+    <comp lib="0" loc="(320,230)" name="Clock">
       <a name="facing" val="west"/>
       <a name="highDuration" val="1"/>
       <a name="lowDuration" val="1"/>
       <a name="label" val="CLK"/>
-      <a name="labelloc" val="north"/>
-      <a name="labelfont" val="Dialog plain 12"/>
-      <a name="labelcolor" val="#000000"/>
-    </comp>
-    <comp loc="(230,200)" name="码表计数器">
-      <a name="facing" val="east"/>
-      <a name="label" val=""/>
       <a name="labelloc" val="north"/>
       <a name="labelfont" val="Dialog plain 12"/>
       <a name="labelcolor" val="#000000"/>
@@ -6715,16 +6878,49 @@ bcbfcf4f 303557a5 c33fe7d1 5a8cbd9f 72e5a6e 180cb2c6 9313a6e2 c5fc7c97
       <a name="offcolor" val="#dcdcdc"/>
       <a name="bg" val="#ffffff"/>
     </comp>
-    <comp lib="0" loc="(100,220)" name="Power">
-      <a name="facing" val="west"/>
-      <a name="width" val="1"/>
-    </comp>
     <comp lib="5" loc="(160,110)" name="Hex Digit Display">
       <a name="color" val="#f00000"/>
       <a name="offcolor" val="#dcdcdc"/>
       <a name="bg" val="#ffffff"/>
     </comp>
+    <comp loc="(230,230)" name="码表计数器">
+      <a name="facing" val="east"/>
+      <a name="label" val=""/>
+      <a name="labelloc" val="north"/>
+      <a name="labelfont" val="Dialog plain 12"/>
+      <a name="labelcolor" val="#000000"/>
+    </comp>
     <comp lib="5" loc="(240,110)" name="Hex Digit Display">
+      <a name="color" val="#f00000"/>
+      <a name="offcolor" val="#dcdcdc"/>
+      <a name="bg" val="#ffffff"/>
+    </comp>
+    <comp lib="6" loc="(73,253)" name="Text">
+      <a name="text" val="En"/>
+      <a name="font" val="Dialog plain 12"/>
+      <a name="color" val="#000000"/>
+      <a name="halign" val="center"/>
+      <a name="valign" val="base"/>
+    </comp>
+    <comp lib="0" loc="(100,210)" name="Pin">
+      <a name="facing" val="east"/>
+      <a name="output" val="false"/>
+      <a name="width" val="1"/>
+      <a name="tristate" val="false"/>
+      <a name="pull" val="none"/>
+      <a name="label" val="Rst"/>
+      <a name="labelloc" val="north"/>
+      <a name="labelfont" val="Dialog plain 12"/>
+      <a name="labelcolor" val="#000000"/>
+    </comp>
+    <comp lib="6" loc="(216,286)" name="Text">
+      <a name="text" val="Ctrl+K驱动时钟自动测试"/>
+      <a name="font" val="SansSerif bold 12"/>
+      <a name="color" val="#000000"/>
+      <a name="halign" val="center"/>
+      <a name="valign" val="base"/>
+    </comp>
+    <comp lib="5" loc="(280,110)" name="Hex Digit Display">
       <a name="color" val="#f00000"/>
       <a name="offcolor" val="#dcdcdc"/>
       <a name="bg" val="#ffffff"/>
@@ -6751,35 +6947,9 @@ bcbfcf4f 303557a5 c33fe7d1 5a8cbd9f 72e5a6e 180cb2c6 9313a6e2 c5fc7c97
       <a name="bit14" val="3"/>
       <a name="bit15" val="3"/>
     </comp>
-    <comp lib="0" loc="(100,180)" name="Pin">
-      <a name="facing" val="east"/>
-      <a name="output" val="false"/>
+    <comp lib="0" loc="(100,250)" name="Power">
+      <a name="facing" val="west"/>
       <a name="width" val="1"/>
-      <a name="tristate" val="false"/>
-      <a name="pull" val="none"/>
-      <a name="label" val="Rst"/>
-      <a name="labelloc" val="north"/>
-      <a name="labelfont" val="Dialog plain 12"/>
-      <a name="labelcolor" val="#000000"/>
-    </comp>
-    <comp lib="5" loc="(280,110)" name="Hex Digit Display">
-      <a name="color" val="#f00000"/>
-      <a name="offcolor" val="#dcdcdc"/>
-      <a name="bg" val="#ffffff"/>
-    </comp>
-    <comp lib="6" loc="(216,256)" name="Text">
-      <a name="text" val="Ctrl+K驱动时钟自动测试"/>
-      <a name="font" val="SansSerif bold 12"/>
-      <a name="color" val="#000000"/>
-      <a name="halign" val="center"/>
-      <a name="valign" val="base"/>
-    </comp>
-    <comp lib="6" loc="(73,223)" name="Text">
-      <a name="text" val="En"/>
-      <a name="font" val="Dialog plain 12"/>
-      <a name="color" val="#000000"/>
-      <a name="halign" val="center"/>
-      <a name="valign" val="base"/>
     </comp>
     <comp lib="0" loc="(210,120)" name="Power">
       <a name="facing" val="east"/>
