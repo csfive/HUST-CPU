@@ -7965,17 +7965,17 @@ bcbfcf4f 303557a5 c33fe7d1 5a8cbd9f 72e5a6e 180cb2c6 9313a6e2 c5fc7c97
     <a name="clabelcolor" val="#000000"/>
     <appear>
       <rect fill="#ff4039" height="119" stroke="#000000" stroke-width="3" width="40" x="50" y="51"/>
-      <circ-port height="8" pin="70,160" width="8" x="46" y="56"/>
-      <circ-port height="8" pin="70,210" width="8" x="46" y="76"/>
-      <circ-port height="8" pin="70,260" width="8" x="46" y="96"/>
-      <circ-port height="8" pin="70,310" width="8" x="46" y="116"/>
-      <circ-port height="8" pin="70,410" width="8" x="46" y="136"/>
+      <circ-port height="8" pin="70,150" width="8" x="46" y="56"/>
+      <circ-port height="8" pin="70,190" width="8" x="46" y="76"/>
+      <circ-port height="8" pin="70,230" width="8" x="46" y="96"/>
+      <circ-port height="8" pin="70,270" width="8" x="46" y="116"/>
+      <circ-port height="8" pin="340,340" width="8" x="46" y="136"/>
       <circ-port height="10" pin="730,150" width="10" x="85" y="65"/>
       <circ-port height="10" pin="760,160" width="10" x="85" y="85"/>
       <circ-port height="10" pin="820,170" width="10" x="85" y="105"/>
       <circ-port height="10" pin="860,180" width="10" x="85" y="125"/>
       <circ-port height="10" pin="910,190" width="10" x="85" y="145"/>
-      <circ-port height="8" pin="70,360" width="8" x="46" y="156"/>
+      <circ-port height="8" pin="70,320" width="8" x="46" y="156"/>
       <circ-anchor facing="east" height="6" width="6" x="77" y="117"/>
     </appear>
     <wire from="(660,150)" to="(730,150)"/>
@@ -7983,7 +7983,54 @@ bcbfcf4f 303557a5 c33fe7d1 5a8cbd9f 72e5a6e 180cb2c6 9313a6e2 c5fc7c97
     <wire from="(660,160)" to="(760,160)"/>
     <wire from="(660,170)" to="(820,170)"/>
     <wire from="(660,190)" to="(910,190)"/>
-    <comp lib="0" loc="(70,160)" name="Pin">
+    <wire from="(600,160)" to="(630,160)"/>
+    <wire from="(600,150)" to="(630,150)"/>
+    <wire from="(600,170)" to="(630,170)"/>
+    <wire from="(480,170)" to="(490,170)"/>
+    <wire from="(480,170)" to="(480,270)"/>
+    <wire from="(440,210)" to="(470,210)"/>
+    <wire from="(470,160)" to="(470,210)"/>
+    <wire from="(440,150)" to="(490,150)"/>
+    <wire from="(470,160)" to="(490,160)"/>
+    <wire from="(440,270)" to="(480,270)"/>
+    <wire from="(340,150)" to="(400,150)"/>
+    <wire from="(340,210)" to="(400,210)"/>
+    <wire from="(340,150)" to="(340,210)"/>
+    <wire from="(340,270)" to="(400,270)"/>
+    <wire from="(340,210)" to="(340,270)"/>
+    <wire from="(70,190)" to="(80,190)"/>
+    <wire from="(80,160)" to="(80,190)"/>
+    <wire from="(70,230)" to="(90,230)"/>
+    <wire from="(90,170)" to="(90,230)"/>
+    <wire from="(70,270)" to="(100,270)"/>
+    <wire from="(100,180)" to="(100,270)"/>
+    <wire from="(110,190)" to="(110,320)"/>
+    <wire from="(70,320)" to="(110,320)"/>
+    <wire from="(110,190)" to="(190,190)"/>
+    <wire from="(80,160)" to="(190,160)"/>
+    <wire from="(100,180)" to="(190,180)"/>
+    <wire from="(70,150)" to="(190,150)"/>
+    <wire from="(90,170)" to="(190,170)"/>
+    <wire from="(170,200)" to="(190,200)"/>
+    <wire from="(170,210)" to="(190,210)"/>
+    <wire from="(170,220)" to="(190,220)"/>
+    <wire from="(540,160)" to="(580,160)"/>
+    <wire from="(510,160)" to="(540,160)"/>
+    <wire from="(140,210)" to="(150,210)"/>
+    <wire from="(140,210)" to="(140,400)"/>
+    <wire from="(540,160)" to="(540,400)"/>
+    <wire from="(140,400)" to="(540,400)"/>
+    <wire from="(220,150)" to="(270,150)"/>
+    <wire from="(270,150)" to="(270,170)"/>
+    <wire from="(270,170)" to="(400,170)"/>
+    <wire from="(220,160)" to="(260,160)"/>
+    <wire from="(260,230)" to="(400,230)"/>
+    <wire from="(260,160)" to="(260,230)"/>
+    <wire from="(220,170)" to="(240,170)"/>
+    <wire from="(240,170)" to="(240,290)"/>
+    <wire from="(240,290)" to="(400,290)"/>
+    <wire from="(340,270)" to="(340,340)"/>
+    <comp lib="0" loc="(70,150)" name="Pin">
       <a name="facing" val="east"/>
       <a name="output" val="false"/>
       <a name="width" val="1"/>
@@ -7994,38 +8041,7 @@ bcbfcf4f 303557a5 c33fe7d1 5a8cbd9f 72e5a6e 180cb2c6 9313a6e2 c5fc7c97
       <a name="labelfont" val="Dialog plain 12"/>
       <a name="labelcolor" val="#000000"/>
     </comp>
-    <comp lib="0" loc="(70,410)" name="Pin">
-      <a name="facing" val="east"/>
-      <a name="output" val="false"/>
-      <a name="width" val="1"/>
-      <a name="tristate" val="false"/>
-      <a name="pull" val="none"/>
-      <a name="label" val="CLK"/>
-      <a name="labelloc" val="north"/>
-      <a name="labelfont" val="Dialog plain 12"/>
-      <a name="labelcolor" val="#000000"/>
-    </comp>
-    <comp lib="4" loc="(440,280)" name="D Flip-Flop">
-      <a name="trigger" val="rising"/>
-      <a name="Pre/Clr Positions" val="LEGACY"/>
-      <a name="NegatePresetClear" val="false"/>
-      <a name="enable" val="true"/>
-      <a name="NewFFLayout" val="false"/>
-      <a name="label" val=""/>
-      <a name="labelfont" val="Dialog plain 12"/>
-      <a name="labelcolor" val="#000000"/>
-    </comp>
-    <comp lib="4" loc="(440,160)" name="D Flip-Flop">
-      <a name="trigger" val="rising"/>
-      <a name="Pre/Clr Positions" val="LEGACY"/>
-      <a name="NegatePresetClear" val="false"/>
-      <a name="enable" val="true"/>
-      <a name="NewFFLayout" val="false"/>
-      <a name="label" val=""/>
-      <a name="labelfont" val="Dialog plain 12"/>
-      <a name="labelcolor" val="#000000"/>
-    </comp>
-    <comp lib="0" loc="(70,310)" name="Pin">
+    <comp lib="0" loc="(70,270)" name="Pin">
       <a name="facing" val="east"/>
       <a name="output" val="false"/>
       <a name="width" val="1"/>
@@ -8036,14 +8052,23 @@ bcbfcf4f 303557a5 c33fe7d1 5a8cbd9f 72e5a6e 180cb2c6 9313a6e2 c5fc7c97
       <a name="labelfont" val="Dialog plain 12"/>
       <a name="labelcolor" val="#000000"/>
     </comp>
-    <comp lib="0" loc="(70,360)" name="Pin">
-      <a name="facing" val="east"/>
-      <a name="output" val="false"/>
-      <a name="width" val="1"/>
-      <a name="tristate" val="false"/>
-      <a name="pull" val="none"/>
-      <a name="label" val="NewRecord"/>
-      <a name="labelloc" val="north"/>
+    <comp lib="4" loc="(440,270)" name="D Flip-Flop">
+      <a name="trigger" val="rising"/>
+      <a name="Pre/Clr Positions" val="LEGACY"/>
+      <a name="NegatePresetClear" val="false"/>
+      <a name="enable" val="true"/>
+      <a name="NewFFLayout" val="false"/>
+      <a name="label" val=""/>
+      <a name="labelfont" val="Dialog plain 12"/>
+      <a name="labelcolor" val="#000000"/>
+    </comp>
+    <comp lib="4" loc="(440,150)" name="D Flip-Flop">
+      <a name="trigger" val="rising"/>
+      <a name="Pre/Clr Positions" val="LEGACY"/>
+      <a name="NegatePresetClear" val="false"/>
+      <a name="enable" val="true"/>
+      <a name="NewFFLayout" val="false"/>
+      <a name="label" val=""/>
       <a name="labelfont" val="Dialog plain 12"/>
       <a name="labelcolor" val="#000000"/>
     </comp>
@@ -8069,16 +8094,14 @@ bcbfcf4f 303557a5 c33fe7d1 5a8cbd9f 72e5a6e 180cb2c6 9313a6e2 c5fc7c97
       <a name="labelfont" val="Dialog plain 12"/>
       <a name="labelcolor" val="#000000"/>
     </comp>
-    <comp lib="0" loc="(70,260)" name="Pin">
-      <a name="facing" val="east"/>
-      <a name="output" val="false"/>
-      <a name="width" val="1"/>
-      <a name="tristate" val="false"/>
-      <a name="pull" val="none"/>
-      <a name="label" val="store"/>
-      <a name="labelloc" val="north"/>
-      <a name="labelfont" val="Dialog plain 12"/>
-      <a name="labelcolor" val="#000000"/>
+    <comp lib="0" loc="(510,160)" name="Splitter">
+      <a name="facing" val="west"/>
+      <a name="fanout" val="3"/>
+      <a name="incoming" val="3"/>
+      <a name="appear" val="center"/>
+      <a name="bit0" val="2"/>
+      <a name="bit1" val="1"/>
+      <a name="bit2" val="0"/>
     </comp>
     <comp lib="0" loc="(860,180)" name="Pin">
       <a name="facing" val="west"/>
@@ -8087,6 +8110,33 @@ bcbfcf4f 303557a5 c33fe7d1 5a8cbd9f 72e5a6e 180cb2c6 9313a6e2 c5fc7c97
       <a name="tristate" val="true"/>
       <a name="pull" val="none"/>
       <a name="label" val="TMen"/>
+      <a name="labelloc" val="north"/>
+      <a name="labelfont" val="Dialog plain 12"/>
+      <a name="labelcolor" val="#000000"/>
+    </comp>
+    <comp lib="0" loc="(580,160)" name="Splitter">
+      <a name="facing" val="east"/>
+      <a name="fanout" val="3"/>
+      <a name="incoming" val="3"/>
+      <a name="appear" val="center"/>
+      <a name="bit0" val="2"/>
+      <a name="bit1" val="1"/>
+      <a name="bit2" val="0"/>
+    </comp>
+    <comp loc="(220,180)" name="码表控制器状态转换(自动生成)">
+      <a name="facing" val="east"/>
+      <a name="label" val=""/>
+      <a name="labelloc" val="north"/>
+      <a name="labelfont" val="Dialog plain 12"/>
+      <a name="labelcolor" val="#000000"/>
+    </comp>
+    <comp lib="0" loc="(340,340)" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="output" val="false"/>
+      <a name="width" val="1"/>
+      <a name="tristate" val="false"/>
+      <a name="pull" val="none"/>
+      <a name="label" val="CLK"/>
       <a name="labelloc" val="north"/>
       <a name="labelfont" val="Dialog plain 12"/>
       <a name="labelcolor" val="#000000"/>
@@ -8102,7 +8152,27 @@ bcbfcf4f 303557a5 c33fe7d1 5a8cbd9f 72e5a6e 180cb2c6 9313a6e2 c5fc7c97
       <a name="labelfont" val="Dialog plain 12"/>
       <a name="labelcolor" val="#000000"/>
     </comp>
-    <comp lib="4" loc="(440,220)" name="D Flip-Flop">
+    <comp lib="0" loc="(70,230)" name="Pin">
+      <a name="facing" val="east"/>
+      <a name="output" val="false"/>
+      <a name="width" val="1"/>
+      <a name="tristate" val="false"/>
+      <a name="pull" val="none"/>
+      <a name="label" val="store"/>
+      <a name="labelloc" val="north"/>
+      <a name="labelfont" val="Dialog plain 12"/>
+      <a name="labelcolor" val="#000000"/>
+    </comp>
+    <comp lib="0" loc="(150,210)" name="Splitter">
+      <a name="facing" val="east"/>
+      <a name="fanout" val="3"/>
+      <a name="incoming" val="3"/>
+      <a name="appear" val="center"/>
+      <a name="bit0" val="2"/>
+      <a name="bit1" val="1"/>
+      <a name="bit2" val="0"/>
+    </comp>
+    <comp lib="4" loc="(440,210)" name="D Flip-Flop">
       <a name="trigger" val="rising"/>
       <a name="Pre/Clr Positions" val="LEGACY"/>
       <a name="NegatePresetClear" val="false"/>
@@ -8112,14 +8182,7 @@ bcbfcf4f 303557a5 c33fe7d1 5a8cbd9f 72e5a6e 180cb2c6 9313a6e2 c5fc7c97
       <a name="labelfont" val="Dialog plain 12"/>
       <a name="labelcolor" val="#000000"/>
     </comp>
-    <comp loc="(220,180)" name="码表控制器状态转换(自动生成)">
-      <a name="facing" val="east"/>
-      <a name="label" val=""/>
-      <a name="labelloc" val="north"/>
-      <a name="labelfont" val="Dialog plain 12"/>
-      <a name="labelcolor" val="#000000"/>
-    </comp>
-    <comp lib="0" loc="(70,210)" name="Pin">
+    <comp lib="0" loc="(70,190)" name="Pin">
       <a name="facing" val="east"/>
       <a name="output" val="false"/>
       <a name="width" val="1"/>
@@ -8144,6 +8207,17 @@ bcbfcf4f 303557a5 c33fe7d1 5a8cbd9f 72e5a6e 180cb2c6 9313a6e2 c5fc7c97
       <a name="tristate" val="true"/>
       <a name="pull" val="none"/>
       <a name="label" val="SDsel"/>
+      <a name="labelloc" val="north"/>
+      <a name="labelfont" val="Dialog plain 12"/>
+      <a name="labelcolor" val="#000000"/>
+    </comp>
+    <comp lib="0" loc="(70,320)" name="Pin">
+      <a name="facing" val="east"/>
+      <a name="output" val="false"/>
+      <a name="width" val="1"/>
+      <a name="tristate" val="false"/>
+      <a name="pull" val="none"/>
+      <a name="label" val="NewRecord"/>
       <a name="labelloc" val="north"/>
       <a name="labelfont" val="Dialog plain 12"/>
       <a name="labelcolor" val="#000000"/>
