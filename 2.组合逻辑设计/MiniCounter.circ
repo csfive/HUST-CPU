@@ -7062,18 +7062,61 @@ This file is intended to be loaded by Logisim http://logisim.altervista.org
     <wire from="(150,100)" to="(160,100)"/>
     <wire from="(150,140)" to="(160,140)"/>
     <wire from="(370,90)" to="(440,90)"/>
-    <wire from="(10,20)" to="(10,180)"/>
     <wire from="(690,180)" to="(890,180)"/>
     <wire from="(690,20)" to="(690,180)"/>
     <wire from="(890,20)" to="(890,180)"/>
     <wire from="(730,60)" to="(770,60)"/>
     <wire from="(740,120)" to="(800,120)"/>
-    <wire from="(10,180)" to="(690,180)"/>
     <wire from="(610,80)" to="(610,90)"/>
     <wire from="(550,90)" to="(570,90)"/>
     <wire from="(590,80)" to="(610,80)"/>
     <wire from="(590,70)" to="(640,70)"/>
     <wire from="(640,70)" to="(640,90)"/>
+    <wire from="(10,20)" to="(10,180)"/>
+    <wire from="(10,180)" to="(690,180)"/>
+    <wire from="(340,420)" to="(340,440)"/>
+    <wire from="(370,300)" to="(370,380)"/>
+    <wire from="(360,450)" to="(360,480)"/>
+    <wire from="(360,420)" to="(360,450)"/>
+    <wire from="(260,330)" to="(290,330)"/>
+    <wire from="(290,370)" to="(310,370)"/>
+    <wire from="(290,330)" to="(290,370)"/>
+    <wire from="(350,250)" to="(350,260)"/>
+    <wire from="(330,240)" to="(330,260)"/>
+    <wire from="(340,290)" to="(340,360)"/>
+    <wire from="(290,410)" to="(290,460)"/>
+    <wire from="(290,410)" to="(310,410)"/>
+    <wire from="(540,290)" to="(540,380)"/>
+    <wire from="(510,420)" to="(510,440)"/>
+    <wire from="(510,220)" to="(510,240)"/>
+    <wire from="(470,460)" to="(470,480)"/>
+    <wire from="(530,420)" to="(530,450)"/>
+    <wire from="(560,250)" to="(560,400)"/>
+    <wire from="(540,400)" to="(560,400)"/>
+    <wire from="(460,370)" to="(480,370)"/>
+    <wire from="(540,290)" to="(630,290)"/>
+    <wire from="(460,330)" to="(460,370)"/>
+    <wire from="(510,440)" to="(510,480)"/>
+    <wire from="(470,410)" to="(480,410)"/>
+    <wire from="(470,410)" to="(470,460)"/>
+    <wire from="(650,280)" to="(660,280)"/>
+    <wire from="(510,240)" to="(510,360)"/>
+    <wire from="(290,330)" to="(460,330)"/>
+    <wire from="(360,450)" to="(530,450)"/>
+    <wire from="(340,440)" to="(510,440)"/>
+    <wire from="(290,460)" to="(470,460)"/>
+    <wire from="(330,240)" to="(510,240)"/>
+    <wire from="(370,300)" to="(630,300)"/>
+    <wire from="(350,250)" to="(560,250)"/>
+    <wire from="(410,400)" to="(410,430)"/>
+    <wire from="(370,400)" to="(410,400)"/>
+    <wire from="(410,430)" to="(580,430)"/>
+    <wire from="(580,430)" to="(580,470)"/>
+    <wire from="(560,400)" to="(600,400)"/>
+    <wire from="(600,400)" to="(600,470)"/>
+    <wire from="(590,500)" to="(590,530)"/>
+    <wire from="(460,390)" to="(480,390)"/>
+    <wire from="(280,390)" to="(310,390)"/>
     <comp lib="0" loc="(800,120)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
@@ -7102,18 +7145,6 @@ This file is intended to be loaded by Logisim http://logisim.altervista.org
       <a name="labelfont" val="Dialog plain 12"/>
       <a name="labelcolor" val="#000000"/>
     </comp>
-    <comp lib="0" loc="(110,390)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="1"/>
-      <a name="label" val="En"/>
-      <a name="labelfont" val="Dialog plain 12"/>
-    </comp>
-    <comp lib="0" loc="(120,260)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="1"/>
-      <a name="label" val="CLK"/>
-      <a name="labelfont" val="Dialog plain 12"/>
-    </comp>
     <comp lib="0" loc="(100,90)" name="Pin">
       <a name="facing" val="east"/>
       <a name="output" val="false"/>
@@ -7125,23 +7156,19 @@ This file is intended to be loaded by Logisim http://logisim.altervista.org
       <a name="labelfont" val="Dialog plain 12"/>
       <a name="labelcolor" val="#000000"/>
     </comp>
-    <comp lib="0" loc="(120,520)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="8"/>
-      <a name="label" val="Din"/>
-      <a name="labelfont" val="Dialog plain 12"/>
-    </comp>
-    <comp lib="0" loc="(110,340)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="1"/>
-      <a name="label" val="Mode"/>
-      <a name="labelfont" val="Dialog plain 12"/>
-    </comp>
-    <comp lib="0" loc="(100,470)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="1"/>
-      <a name="label" val="RST"/>
-      <a name="labelfont" val="Dialog plain 12"/>
+    <comp lib="0" loc="(650,280)" name="Splitter">
+      <a name="facing" val="west"/>
+      <a name="fanout" val="2"/>
+      <a name="incoming" val="8"/>
+      <a name="appear" val="left"/>
+      <a name="bit0" val="0"/>
+      <a name="bit1" val="0"/>
+      <a name="bit2" val="0"/>
+      <a name="bit3" val="0"/>
+      <a name="bit4" val="1"/>
+      <a name="bit5" val="1"/>
+      <a name="bit6" val="1"/>
+      <a name="bit7" val="1"/>
     </comp>
     <comp lib="6" loc="(791,171)" name="Text">
       <a name="text" val="正计数到59，倒计数到0时输出为1"/>
@@ -7149,12 +7176,6 @@ This file is intended to be loaded by Logisim http://logisim.altervista.org
       <a name="color" val="#000000"/>
       <a name="halign" val="center"/>
       <a name="valign" val="base"/>
-    </comp>
-    <comp lib="0" loc="(110,430)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="8"/>
-      <a name="label" val="Din"/>
-      <a name="labelfont" val="Dialog plain 12"/>
     </comp>
     <comp lib="0" loc="(370,90)" name="Pin">
       <a name="facing" val="east"/>
@@ -7178,6 +7199,31 @@ This file is intended to be loaded by Logisim http://logisim.altervista.org
       <a name="labelfont" val="Dialog plain 12"/>
       <a name="labelcolor" val="#000000"/>
     </comp>
+    <comp lib="1" loc="(340,290)" name="AND Gate">
+      <a name="facing" val="south"/>
+      <a name="width" val="1"/>
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
+      <a name="out" val="01"/>
+      <a name="label" val=""/>
+      <a name="labelfont" val="Dialog plain 12"/>
+      <a name="labelcolor" val="#000000"/>
+      <a name="negate0" val="false"/>
+      <a name="negate1" val="false"/>
+    </comp>
+    <comp loc="(540,390)" name="BCD双向计数器(可异步置位)">
+      <a name="facing" val="east"/>
+      <a name="label" val=""/>
+      <a name="labelloc" val="north"/>
+      <a name="labelfont" val="Dialog plain 12"/>
+      <a name="labelcolor" val="#000000"/>
+    </comp>
+    <comp lib="0" loc="(360,480)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="width" val="1"/>
+      <a name="label" val="RST"/>
+      <a name="labelfont" val="Dialog plain 12"/>
+    </comp>
     <comp lib="0" loc="(570,90)" name="Splitter">
       <a name="facing" val="east"/>
       <a name="fanout" val="2"/>
@@ -7191,6 +7237,12 @@ This file is intended to be loaded by Logisim http://logisim.altervista.org
       <a name="bit5" val="1"/>
       <a name="bit6" val="1"/>
       <a name="bit7" val="1"/>
+    </comp>
+    <comp lib="0" loc="(280,390)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="4"/>
+      <a name="label" val="Din1"/>
+      <a name="labelfont" val="Dialog plain 12"/>
     </comp>
     <comp lib="0" loc="(350,50)" name="Pin">
       <a name="facing" val="east"/>
@@ -7214,6 +7266,13 @@ This file is intended to be loaded by Logisim http://logisim.altervista.org
       <a name="labelfont" val="Dialog plain 12"/>
       <a name="labelcolor" val="#000000"/>
     </comp>
+    <comp loc="(370,390)" name="0~5双向计数器(可异步置位)">
+      <a name="facing" val="east"/>
+      <a name="label" val=""/>
+      <a name="labelloc" val="north"/>
+      <a name="labelfont" val="Dialog plain 12"/>
+      <a name="labelcolor" val="#000000"/>
+    </comp>
     <comp lib="0" loc="(420,100)" name="Pull Resistor">
       <a name="facing" val="east"/>
       <a name="pull" val="0"/>
@@ -7224,16 +7283,28 @@ This file is intended to be loaded by Logisim http://logisim.altervista.org
       <a name="label" val="Din0"/>
       <a name="labelfont" val="Dialog plain 12"/>
     </comp>
+    <comp lib="0" loc="(660,280)" name="Tunnel">
+      <a name="facing" val="west"/>
+      <a name="width" val="8"/>
+      <a name="label" val="Q"/>
+      <a name="labelfont" val="Dialog plain 12"/>
+    </comp>
     <comp lib="0" loc="(190,50)" name="Tunnel">
       <a name="facing" val="west"/>
       <a name="width" val="1"/>
       <a name="label" val="CLK"/>
       <a name="labelfont" val="Dialog plain 12"/>
     </comp>
-    <comp lib="0" loc="(770,260)" name="Tunnel">
-      <a name="facing" val="west"/>
-      <a name="width" val="8"/>
-      <a name="label" val="Q"/>
+    <comp lib="0" loc="(510,480)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="width" val="1"/>
+      <a name="label" val="CLK"/>
+      <a name="labelfont" val="Dialog plain 12"/>
+    </comp>
+    <comp lib="0" loc="(460,390)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="4"/>
+      <a name="label" val="Din0"/>
       <a name="labelfont" val="Dialog plain 12"/>
     </comp>
     <comp lib="0" loc="(460,130)" name="Tunnel">
@@ -7242,29 +7313,16 @@ This file is intended to be loaded by Logisim http://logisim.altervista.org
       <a name="label" val="RST"/>
       <a name="labelfont" val="Dialog plain 12"/>
     </comp>
-    <comp lib="0" loc="(700,260)" name="Tunnel">
-      <a name="facing" val="west"/>
+    <comp lib="0" loc="(260,330)" name="Tunnel">
+      <a name="facing" val="east"/>
       <a name="width" val="1"/>
-      <a name="label" val="Cout"/>
+      <a name="label" val="PreSet"/>
       <a name="labelfont" val="Dialog plain 12"/>
     </comp>
     <comp lib="0" loc="(180,90)" name="Tunnel">
       <a name="facing" val="west"/>
       <a name="width" val="1"/>
       <a name="label" val="PreSet"/>
-      <a name="labelfont" val="Dialog plain 12"/>
-    </comp>
-    <comp loc="(320,360)" name="0~5双向计数器(可异步置位)">
-      <a name="facing" val="east"/>
-      <a name="label" val=""/>
-      <a name="labelloc" val="north"/>
-      <a name="labelfont" val="Dialog plain 12"/>
-      <a name="labelcolor" val="#000000"/>
-    </comp>
-    <comp lib="0" loc="(210,520)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="4"/>
-      <a name="label" val="Din0"/>
       <a name="labelfont" val="Dialog plain 12"/>
     </comp>
     <comp lib="6" loc="(229,172)" name="Text">
@@ -7280,6 +7338,18 @@ This file is intended to be loaded by Logisim http://logisim.altervista.org
       <a name="label" val="Din"/>
       <a name="labelfont" val="Dialog plain 12"/>
     </comp>
+    <comp lib="0" loc="(510,220)" name="Tunnel">
+      <a name="facing" val="south"/>
+      <a name="width" val="1"/>
+      <a name="label" val="En"/>
+      <a name="labelfont" val="Dialog plain 12"/>
+    </comp>
+    <comp lib="0" loc="(470,480)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="width" val="1"/>
+      <a name="label" val="Mode"/>
+      <a name="labelfont" val="Dialog plain 12"/>
+    </comp>
     <comp lib="0" loc="(150,100)" name="Pull Resistor">
       <a name="facing" val="east"/>
       <a name="pull" val="0"/>
@@ -7287,12 +7357,6 @@ This file is intended to be loaded by Logisim http://logisim.altervista.org
     <comp lib="0" loc="(420,60)" name="Pull Resistor">
       <a name="facing" val="east"/>
       <a name="pull" val="1"/>
-    </comp>
-    <comp lib="0" loc="(160,520)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="4"/>
-      <a name="label" val="Din1"/>
-      <a name="labelfont" val="Dialog plain 12"/>
     </comp>
     <comp lib="0" loc="(470,50)" name="Tunnel">
       <a name="facing" val="west"/>
@@ -7320,12 +7384,6 @@ This file is intended to be loaded by Logisim http://logisim.altervista.org
       <a name="facing" val="east"/>
       <a name="pull" val="0"/>
     </comp>
-    <comp lib="0" loc="(110,300)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="1"/>
-      <a name="label" val="PreSet"/>
-      <a name="labelfont" val="Dialog plain 12"/>
-    </comp>
     <comp lib="0" loc="(100,50)" name="Pin">
       <a name="facing" val="east"/>
       <a name="output" val="false"/>
@@ -7343,18 +7401,29 @@ This file is intended to be loaded by Logisim http://logisim.altervista.org
       <a name="label" val="Q"/>
       <a name="labelfont" val="Dialog plain 12"/>
     </comp>
+    <comp lib="0" loc="(590,530)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="width" val="1"/>
+      <a name="label" val="Cout"/>
+      <a name="labelfont" val="Dialog plain 12"/>
+    </comp>
     <comp lib="0" loc="(610,90)" name="Tunnel">
       <a name="facing" val="north"/>
       <a name="width" val="4"/>
       <a name="label" val="Din1"/>
       <a name="labelfont" val="Dialog plain 12"/>
     </comp>
-    <comp loc="(530,360)" name="BCD双向计数器(可异步置位)">
-      <a name="facing" val="east"/>
+    <comp lib="1" loc="(590,500)" name="AND Gate">
+      <a name="facing" val="south"/>
+      <a name="width" val="1"/>
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
+      <a name="out" val="01"/>
       <a name="label" val=""/>
-      <a name="labelloc" val="north"/>
       <a name="labelfont" val="Dialog plain 12"/>
       <a name="labelcolor" val="#000000"/>
+      <a name="negate0" val="false"/>
+      <a name="negate1" val="false"/>
     </comp>
   </circuit>
   <circuit name="59分59秒双向计数器">
