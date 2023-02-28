@@ -10423,7 +10423,6 @@ bdb4 f3d1 a7a1 b1a1
     <wire from="(150,180)" to="(230,180)"/>
     <wire from="(370,180)" to="(380,180)"/>
     <wire from="(580,120)" to="(580,130)"/>
-    <wire from="(120,140)" to="(170,140)"/>
     <wire from="(590,180)" to="(630,180)"/>
     <wire from="(710,180)" to="(750,180)"/>
     <wire from="(1000,180)" to="(1000,200)"/>
@@ -10438,9 +10437,7 @@ bdb4 f3d1 a7a1 b1a1
     <wire from="(640,150)" to="(640,160)"/>
     <wire from="(580,300)" to="(760,300)"/>
     <wire from="(880,150)" to="(880,160)"/>
-    <wire from="(770,250)" to="(950,250)"/>
     <wire from="(110,300)" to="(110,310)"/>
-    <wire from="(950,270)" to="(990,270)"/>
     <wire from="(110,300)" to="(400,300)"/>
     <wire from="(360,250)" to="(390,250)"/>
     <wire from="(590,250)" to="(750,250)"/>
@@ -10453,6 +10450,29 @@ bdb4 f3d1 a7a1 b1a1
     <wire from="(860,150)" to="(860,160)"/>
     <wire from="(840,160)" to="(840,210)"/>
     <wire from="(860,160)" to="(860,210)"/>
+    <wire from="(950,270)" to="(1000,270)"/>
+    <wire from="(270,70)" to="(270,80)"/>
+    <wire from="(400,80)" to="(580,80)"/>
+    <wire from="(580,80)" to="(580,120)"/>
+    <wire from="(400,80)" to="(400,120)"/>
+    <wire from="(270,80)" to="(400,80)"/>
+    <wire from="(580,80)" to="(760,80)"/>
+    <wire from="(760,80)" to="(760,120)"/>
+    <wire from="(280,40)" to="(310,40)"/>
+    <wire from="(280,60)" to="(310,60)"/>
+    <wire from="(170,50)" to="(170,140)"/>
+    <wire from="(170,50)" to="(250,50)"/>
+    <wire from="(930,270)" to="(950,270)"/>
+    <wire from="(840,260)" to="(890,260)"/>
+    <wire from="(840,250)" to="(840,260)"/>
+    <wire from="(770,250)" to="(840,250)"/>
+    <wire from="(860,280)" to="(900,280)"/>
+    <wire from="(760,80)" to="(850,80)"/>
+    <wire from="(880,90)" to="(930,90)"/>
+    <wire from="(930,90)" to="(930,250)"/>
+    <wire from="(930,250)" to="(950,250)"/>
+    <wire from="(840,250)" to="(930,250)"/>
+    <wire from="(880,70)" to="(900,70)"/>
     <comp lib="0" loc="(640,150)" name="Tunnel">
       <a name="facing" val="south"/>
       <a name="width" val="1"/>
@@ -10499,6 +10519,12 @@ bdb4 f3d1 a7a1 b1a1
       <a name="labelloc" val="south"/>
       <a name="labelfont" val="Dialog plain 12"/>
       <a name="labelcolor" val="#000000"/>
+    </comp>
+    <comp lib="0" loc="(900,70)" name="Tunnel">
+      <a name="facing" val="west"/>
+      <a name="width" val="1"/>
+      <a name="label" val="2err"/>
+      <a name="labelfont" val="Dialog plain 8"/>
     </comp>
     <comp lib="6" loc="(191,124)" name="Text">
       <a name="text" val="加法器"/>
@@ -10565,12 +10591,6 @@ bdb4 f3d1 a7a1 b1a1
       <a name="halign" val="center"/>
       <a name="valign" val="base"/>
     </comp>
-    <comp lib="0" loc="(990,270)" name="Tunnel">
-      <a name="facing" val="west"/>
-      <a name="width" val="1"/>
-      <a name="label" val="en5"/>
-      <a name="labelfont" val="Dialog plain 12"/>
-    </comp>
     <comp lib="0" loc="(300,860)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="width" val="1"/>
@@ -10582,6 +10602,18 @@ bdb4 f3d1 a7a1 b1a1
       <a name="width" val="1"/>
       <a name="label" val="1err"/>
       <a name="labelfont" val="Dialog plain 12"/>
+    </comp>
+    <comp lib="1" loc="(850,80)" name="AND Gate">
+      <a name="facing" val="west"/>
+      <a name="width" val="1"/>
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
+      <a name="out" val="01"/>
+      <a name="label" val=""/>
+      <a name="labelfont" val="Dialog plain 12"/>
+      <a name="labelcolor" val="#000000"/>
+      <a name="negate0" val="false"/>
+      <a name="negate1" val="false"/>
     </comp>
     <comp lib="0" loc="(410,860)" name="Pin">
       <a name="facing" val="west"/>
@@ -10678,6 +10710,18 @@ bdb4 f3d1 a7a1 b1a1
       <a name="labelloc" val="north"/>
       <a name="labelfont" val="Dialog plain 12"/>
       <a name="labelcolor" val="#000000"/>
+    </comp>
+    <comp lib="1" loc="(930,270)" name="OR Gate">
+      <a name="facing" val="east"/>
+      <a name="width" val="1"/>
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
+      <a name="out" val="01"/>
+      <a name="label" val=""/>
+      <a name="labelfont" val="Dialog plain 12"/>
+      <a name="labelcolor" val="#000000"/>
+      <a name="negate0" val="true"/>
+      <a name="negate1" val="false"/>
     </comp>
     <comp loc="(770,210)" name="●22位流水接口">
       <a name="facing" val="east"/>
@@ -10784,6 +10828,13 @@ bdb4 f3d1 a7a1 b1a1
       <a name="labelfont" val="Dialog plain 12"/>
       <a name="labelcolor" val="#000000"/>
     </comp>
+    <comp lib="6" loc="(434,45)" name="Text">
+      <a name="text" val="-3   1000 0011   1111 1101"/>
+      <a name="font" val="SansSerif plain 12"/>
+      <a name="color" val="#000000"/>
+      <a name="halign" val="center"/>
+      <a name="valign" val="base"/>
+    </comp>
     <comp loc="(590,210)" name="●22位流水接口">
       <a name="facing" val="east"/>
       <a name="label" val=""/>
@@ -10805,6 +10856,11 @@ bdb4 f3d1 a7a1 b1a1
       <a name="offcolor" val="#ffffff"/>
       <a name="persist" val="0"/>
       <a name="dotshape" val="circle"/>
+    </comp>
+    <comp lib="0" loc="(310,60)" name="Constant">
+      <a name="facing" val="west"/>
+      <a name="width" val="8"/>
+      <a name="value" val="0xfd"/>
     </comp>
     <comp lib="0" loc="(670,220)" name="Constant">
       <a name="facing" val="north"/>
@@ -10829,6 +10885,12 @@ bdb4 f3d1 a7a1 b1a1
       <a name="width" val="1"/>
       <a name="label" val="en5"/>
       <a name="labelfont" val="Dialog plain 12"/>
+    </comp>
+    <comp lib="0" loc="(860,280)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="1"/>
+      <a name="label" val="2err"/>
+      <a name="labelfont" val="Dialog plain 8"/>
     </comp>
     <comp lib="6" loc="(624,541)" name="Text">
       <a name="text" val="接收方"/>
@@ -10876,12 +10938,10 @@ bdb4 f3d1 a7a1 b1a1
       <a name="halign" val="center"/>
       <a name="valign" val="base"/>
     </comp>
-    <comp lib="6" loc="(134,50)" name="Text">
-      <a name="text" val="海明码流水传输电路"/>
-      <a name="font" val="SansSerif bold 14"/>
-      <a name="color" val="#000000"/>
-      <a name="halign" val="center"/>
-      <a name="valign" val="base"/>
+    <comp lib="0" loc="(310,40)" name="Constant">
+      <a name="facing" val="west"/>
+      <a name="width" val="8"/>
+      <a name="value" val="0x1"/>
     </comp>
     <comp lib="6" loc="(104,545)" name="Text">
       <a name="text" val="发送方"/>
@@ -10970,6 +11030,13 @@ bdb4 f3d1 a7a1 b1a1
       <a name="labelfont" val="Dialog plain 12"/>
       <a name="labelcolor" val="#000000"/>
     </comp>
+    <comp lib="6" loc="(100,47)" name="Text">
+      <a name="text" val="海明码流水传输电路"/>
+      <a name="font" val="SansSerif bold 14"/>
+      <a name="color" val="#000000"/>
+      <a name="halign" val="center"/>
+      <a name="valign" val="base"/>
+    </comp>
     <comp lib="0" loc="(1000,200)" name="Probe">
       <a name="facing" val="north"/>
       <a name="radix" val="16"/>
@@ -10986,6 +11053,14 @@ bdb4 f3d1 a7a1 b1a1
       <a name="offcolor" val="#ffffff"/>
       <a name="persist" val="0"/>
       <a name="dotshape" val="circle"/>
+    </comp>
+    <comp lib="2" loc="(250,50)" name="Multiplexer">
+      <a name="facing" val="west"/>
+      <a name="selloc" val="bl"/>
+      <a name="select" val="1"/>
+      <a name="width" val="8"/>
+      <a name="disabled" val="Z"/>
+      <a name="enable" val="false"/>
     </comp>
     <comp lib="6" loc="(115,203)" name="Text">
       <a name="text" val="寄存器"/>
@@ -11007,6 +11082,12 @@ bdb4 f3d1 a7a1 b1a1
       <a name="halign" val="center"/>
       <a name="valign" val="base"/>
     </comp>
+    <comp lib="0" loc="(1000,270)" name="Tunnel">
+      <a name="facing" val="west"/>
+      <a name="width" val="1"/>
+      <a name="label" val="en5"/>
+      <a name="labelfont" val="Dialog plain 12"/>
+    </comp>
     <comp lib="6" loc="(875,317)" name="Text">
       <a name="text" val="4.解码阶段"/>
       <a name="font" val="Dialog plain 12"/>
@@ -11026,10 +11107,12 @@ bdb4 f3d1 a7a1 b1a1
       <a name="label" val="clr3"/>
       <a name="labelfont" val="Dialog plain 12"/>
     </comp>
-    <comp lib="0" loc="(120,140)" name="Constant">
-      <a name="facing" val="east"/>
-      <a name="width" val="8"/>
-      <a name="value" val="0x1"/>
+    <comp lib="6" loc="(797,58)" name="Text">
+      <a name="text" val="两位错时清零重传-3"/>
+      <a name="font" val="SansSerif plain 12"/>
+      <a name="color" val="#000000"/>
+      <a name="halign" val="center"/>
+      <a name="valign" val="base"/>
     </comp>
   </circuit>
   <circuit name="◆CRC传输测试1">
