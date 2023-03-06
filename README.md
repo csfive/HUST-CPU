@@ -1,7 +1,7 @@
 <br>
 
 <p align="center">
-<img src="./HUST.png" alt="logo" height="300"/>
+<img src="./0.资源汇总/HUST.png" alt="logo" height="250"/>
 </p>
 
 <h1 align="center">
