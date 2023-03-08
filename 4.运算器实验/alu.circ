@@ -6566,6 +6566,88 @@ This file is intended to be loaded by Logisim http://logisim.altervista.org
     <wire from="(390,30)" to="(410,30)"/>
     <wire from="(320,50)" to="(410,50)"/>
     <wire from="(410,50)" to="(430,50)"/>
+    <wire from="(150,260)" to="(410,260)"/>
+    <wire from="(150,280)" to="(410,280)"/>
+    <wire from="(150,300)" to="(410,300)"/>
+    <wire from="(420,550)" to="(420,610)"/>
+    <wire from="(700,550)" to="(700,610)"/>
+    <wire from="(420,610)" to="(700,610)"/>
+    <wire from="(700,610)" to="(980,610)"/>
+    <wire from="(980,550)" to="(980,610)"/>
+    <wire from="(980,610)" to="(1260,610)"/>
+    <wire from="(1260,550)" to="(1260,610)"/>
+    <wire from="(430,220)" to="(690,220)"/>
+    <wire from="(430,240)" to="(690,240)"/>
+    <wire from="(430,280)" to="(690,280)"/>
+    <wire from="(430,300)" to="(690,300)"/>
+    <wire from="(710,300)" to="(970,300)"/>
+    <wire from="(970,260)" to="(970,270)"/>
+    <wire from="(710,260)" to="(970,260)"/>
+    <wire from="(710,240)" to="(970,240)"/>
+    <wire from="(970,220)" to="(970,230)"/>
+    <wire from="(710,220)" to="(970,220)"/>
+    <wire from="(990,220)" to="(1250,220)"/>
+    <wire from="(990,240)" to="(1250,240)"/>
+    <wire from="(990,260)" to="(1250,260)"/>
+    <wire from="(990,280)" to="(1250,280)"/>
+    <wire from="(170,240)" to="(410,240)"/>
+    <wire from="(150,240)" to="(170,240)"/>
+    <wire from="(190,220)" to="(410,220)"/>
+    <wire from="(150,220)" to="(190,220)"/>
+    <wire from="(170,440)" to="(180,440)"/>
+    <wire from="(170,240)" to="(170,440)"/>
+    <wire from="(240,460)" to="(250,460)"/>
+    <wire from="(220,440)" to="(250,440)"/>
+    <wire from="(190,220)" to="(190,380)"/>
+    <wire from="(190,380)" to="(210,380)"/>
+    <wire from="(250,380)" to="(330,380)"/>
+    <wire from="(290,450)" to="(300,450)"/>
+    <wire from="(300,400)" to="(330,400)"/>
+    <wire from="(300,400)" to="(300,450)"/>
+    <wire from="(370,390)" to="(390,390)"/>
+    <wire from="(390,380)" to="(410,380)"/>
+    <wire from="(390,380)" to="(390,390)"/>
+    <wire from="(670,380)" to="(670,390)"/>
+    <wire from="(650,390)" to="(670,390)"/>
+    <wire from="(690,380)" to="(700,380)"/>
+    <wire from="(670,380)" to="(690,380)"/>
+    <wire from="(430,380)" to="(610,380)"/>
+    <wire from="(460,260)" to="(460,460)"/>
+    <wire from="(430,260)" to="(460,260)"/>
+    <wire from="(460,260)" to="(690,260)"/>
+    <wire from="(520,460)" to="(550,460)"/>
+    <wire from="(460,460)" to="(480,460)"/>
+    <wire from="(540,480)" to="(550,480)"/>
+    <wire from="(590,470)" to="(600,470)"/>
+    <wire from="(600,400)" to="(600,470)"/>
+    <wire from="(600,400)" to="(610,400)"/>
+    <wire from="(740,460)" to="(760,460)"/>
+    <wire from="(820,480)" to="(830,480)"/>
+    <wire from="(880,400)" to="(880,470)"/>
+    <wire from="(870,470)" to="(880,470)"/>
+    <wire from="(880,400)" to="(890,400)"/>
+    <wire from="(800,460)" to="(830,460)"/>
+    <wire from="(710,380)" to="(890,380)"/>
+    <wire from="(740,280)" to="(740,460)"/>
+    <wire from="(740,280)" to="(970,280)"/>
+    <wire from="(710,280)" to="(740,280)"/>
+    <wire from="(930,390)" to="(950,390)"/>
+    <wire from="(950,380)" to="(950,390)"/>
+    <wire from="(950,380)" to="(970,380)"/>
+    <wire from="(1080,460)" to="(1110,460)"/>
+    <wire from="(1100,480)" to="(1110,480)"/>
+    <wire from="(1160,400)" to="(1160,470)"/>
+    <wire from="(1150,470)" to="(1160,470)"/>
+    <wire from="(1160,400)" to="(1170,400)"/>
+    <wire from="(990,380)" to="(1170,380)"/>
+    <wire from="(1210,390)" to="(1230,390)"/>
+    <wire from="(1230,380)" to="(1230,390)"/>
+    <wire from="(1230,380)" to="(1250,380)"/>
+    <wire from="(1020,460)" to="(1040,460)"/>
+    <wire from="(1020,300)" to="(1020,460)"/>
+    <wire from="(1020,300)" to="(1250,300)"/>
+    <wire from="(990,300)" to="(1020,300)"/>
+    <wire from="(160,610)" to="(420,610)"/>
     <comp lib="3" loc="(1490,310)" name="Comparator">
       <a name="width" val="10"/>
       <a name="mode" val="twosComplement"/>
@@ -6583,6 +6665,9 @@ This file is intended to be loaded by Logisim http://logisim.altervista.org
       <a name="labelloc" val="east"/>
       <a name="labelfont" val="Dialog plain 12"/>
       <a name="labelcolor" val="#000000"/>
+    </comp>
+    <comp lib="3" loc="(650,390)" name="Adder">
+      <a name="width" val="10"/>
     </comp>
     <comp lib="0" loc="(100,90)" name="Tunnel">
       <a name="facing" val="north"/>
@@ -6656,6 +6741,9 @@ This file is intended to be loaded by Logisim http://logisim.altervista.org
       <a name="labelloc" val="north"/>
       <a name="labelfont" val="Dialog plain 12"/>
       <a name="labelcolor" val="#000000"/>
+    </comp>
+    <comp lib="3" loc="(370,390)" name="Adder">
+      <a name="width" val="10"/>
     </comp>
     <comp lib="0" loc="(300,60)" name="Splitter">
       <a name="facing" val="east"/>
@@ -6731,6 +6819,9 @@ This file is intended to be loaded by Logisim http://logisim.altervista.org
       <a name="halign" val="center"/>
       <a name="valign" val="base"/>
     </comp>
+    <comp lib="3" loc="(930,390)" name="Adder">
+      <a name="width" val="10"/>
+    </comp>
     <comp lib="0" loc="(580,60)" name="Probe">
       <a name="facing" val="west"/>
       <a name="radix" val="10unsigned"/>
@@ -6788,6 +6879,11 @@ This file is intended to be loaded by Logisim http://logisim.altervista.org
       <a name="halign" val="center"/>
       <a name="valign" val="base"/>
     </comp>
+    <comp lib="0" loc="(240,460)" name="Constant">
+      <a name="facing" val="east"/>
+      <a name="width" val="4"/>
+      <a name="value" val="0x1"/>
+    </comp>
     <comp loc="(430,180)" name="★乘法线流水接口">
       <a name="facing" val="east"/>
       <a name="label" val=""/>
@@ -6810,6 +6906,11 @@ This file is intended to be loaded by Logisim http://logisim.altervista.org
       <a name="labelloc" val="north"/>
       <a name="labelfont" val="Dialog plain 12"/>
       <a name="labelcolor" val="#000000"/>
+    </comp>
+    <comp lib="0" loc="(1100,480)" name="Constant">
+      <a name="facing" val="east"/>
+      <a name="width" val="4"/>
+      <a name="value" val="0x4"/>
     </comp>
     <comp lib="5" loc="(520,70)" name="Text">
       <a name="text" val="×"/>
@@ -6847,10 +6948,25 @@ This file is intended to be loaded by Logisim http://logisim.altervista.org
       <a name="labelfont" val="Dialog plain 12"/>
       <a name="labelcolor" val="#000000"/>
     </comp>
+    <comp lib="3" loc="(590,470)" name="Shifter">
+      <a name="width" val="10"/>
+      <a name="shift" val="ll"/>
+    </comp>
+    <comp lib="0" loc="(220,440)" name="Bit Extender">
+      <a name="in_width" val="5"/>
+      <a name="out_width" val="10"/>
+      <a name="type" val="zero"/>
+    </comp>
     <comp lib="0" loc="(820,40)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="width" val="10"/>
       <a name="label" val="P2"/>
+      <a name="labelfont" val="Dialog plain 12"/>
+    </comp>
+    <comp lib="0" loc="(160,610)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="1"/>
+      <a name="label" val="CLK"/>
       <a name="labelfont" val="Dialog plain 12"/>
     </comp>
     <comp lib="0" loc="(1290,160)" name="Probe">
@@ -6861,12 +6977,20 @@ This file is intended to be loaded by Logisim http://logisim.altervista.org
       <a name="labelfont" val="Dialog plain 12"/>
       <a name="labelcolor" val="#000000"/>
     </comp>
+    <comp lib="0" loc="(520,460)" name="Bit Extender">
+      <a name="in_width" val="5"/>
+      <a name="out_width" val="10"/>
+      <a name="type" val="zero"/>
+    </comp>
     <comp lib="5" loc="(1116,322)" name="Text">
       <a name="text" val="第4步"/>
       <a name="font" val="SansSerif bold 22"/>
       <a name="color" val="#000000"/>
       <a name="halign" val="center"/>
       <a name="valign" val="base"/>
+    </comp>
+    <comp lib="3" loc="(1210,390)" name="Adder">
+      <a name="width" val="10"/>
     </comp>
     <comp lib="0" loc="(50,90)" name="Tunnel">
       <a name="facing" val="north"/>
@@ -6891,6 +7015,10 @@ This file is intended to be loaded by Logisim http://logisim.altervista.org
       <a name="labelfont" val="Dialog plain 12"/>
       <a name="labelcolor" val="#000000"/>
     </comp>
+    <comp lib="3" loc="(1150,470)" name="Shifter">
+      <a name="width" val="10"/>
+      <a name="shift" val="ll"/>
+    </comp>
     <comp lib="4" loc="(120,60)" name="Counter">
       <a name="width" val="6"/>
       <a name="max" val="0x3f"/>
@@ -6912,12 +7040,6 @@ This file is intended to be loaded by Logisim http://logisim.altervista.org
       <a name="labelfont" val="Dialog plain 12"/>
       <a name="labelcolor" val="#000000"/>
     </comp>
-    <comp lib="0" loc="(60,610)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="1"/>
-      <a name="label" val="CLK"/>
-      <a name="labelfont" val="Dialog plain 12"/>
-    </comp>
     <comp lib="4" loc="(290,60)" name="ROM">
       <a name="addrWidth" val="6"/>
       <a name="dataWidth" val="10"/>
@@ -6935,6 +7057,10 @@ This file is intended to be loaded by Logisim http://logisim.altervista.org
 0 18 40 3b0 390 3f0 7e 50
 </a>
       <a name="Select" val="low"/>
+    </comp>
+    <comp lib="3" loc="(290,450)" name="Shifter">
+      <a name="width" val="10"/>
+      <a name="shift" val="ll"/>
     </comp>
     <comp loc="(710,180)" name="★乘法线流水接口">
       <a name="facing" val="east"/>
@@ -7006,6 +7132,20 @@ This file is intended to be loaded by Logisim http://logisim.altervista.org
       <a name="label" val="P4"/>
       <a name="labelfont" val="Dialog plain 12"/>
     </comp>
+    <comp lib="3" loc="(870,470)" name="Shifter">
+      <a name="width" val="10"/>
+      <a name="shift" val="ll"/>
+    </comp>
+    <comp lib="0" loc="(1080,460)" name="Bit Extender">
+      <a name="in_width" val="5"/>
+      <a name="out_width" val="10"/>
+      <a name="type" val="zero"/>
+    </comp>
+    <comp lib="0" loc="(800,460)" name="Bit Extender">
+      <a name="in_width" val="5"/>
+      <a name="out_width" val="10"/>
+      <a name="type" val="zero"/>
+    </comp>
     <comp lib="0" loc="(720,530)" name="Tunnel">
       <a name="facing" val="west"/>
       <a name="width" val="10"/>
@@ -7030,12 +7170,27 @@ This file is intended to be loaded by Logisim http://logisim.altervista.org
       <a name="labelfont" val="Dialog plain 12"/>
       <a name="labelcolor" val="#000000"/>
     </comp>
+    <comp lib="0" loc="(250,380)" name="Bit Extender">
+      <a name="in_width" val="5"/>
+      <a name="out_width" val="10"/>
+      <a name="type" val="zero"/>
+    </comp>
     <comp lib="5" loc="(284,325)" name="Text">
       <a name="text" val="第1步"/>
       <a name="font" val="SansSerif bold 22"/>
       <a name="color" val="#000000"/>
       <a name="halign" val="center"/>
       <a name="valign" val="base"/>
+    </comp>
+    <comp lib="0" loc="(540,480)" name="Constant">
+      <a name="facing" val="east"/>
+      <a name="width" val="4"/>
+      <a name="value" val="0x2"/>
+    </comp>
+    <comp lib="0" loc="(820,480)" name="Constant">
+      <a name="facing" val="east"/>
+      <a name="width" val="4"/>
+      <a name="value" val="0x3"/>
     </comp>
     <comp lib="3" loc="(1430,190)" name="Multiplier">
       <a name="width" val="5"/>
