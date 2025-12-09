@@ -11,7 +11,7 @@ const sidebar: DefaultTheme.Sidebar = [
       { text: '06. CPU 设计试验', link: '/notes/6' },
       { text: '07. 单总线 CPU', link: '/notes/7' },
     ],
-  }
+  },
 ]
 
 const configs = {
