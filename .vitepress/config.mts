@@ -4,12 +4,6 @@ const sidebar: DefaultTheme.Sidebar = [
   {
     items: [
       { text: '01. 新手上路实验', link: '/notes/1' },
-      { text: '02. 组合逻辑设计', link: '/notes/2' },
-      { text: '03. 数据表示实验', link: '/notes/3' },
-      { text: '04. 运算器实验', link: '/notes/4' },
-      { text: '05. 存储系统试验', link: '/notes/5' },
-      { text: '06. CPU 设计试验', link: '/notes/6' },
-      { text: '07. 单总线 CPU', link: '/notes/7' },
     ],
   },
 ]
