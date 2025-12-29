@@ -2,9 +2,7 @@ import { defineConfig, type DefaultTheme, type HeadConfig } from 'vitepress'
 
 const sidebar: DefaultTheme.Sidebar = [
   {
-    items: [
-      { text: '01. 新手上路实验', link: '/notes/1' },
-    ],
+    items: [{ text: '01. 新手上路实验', link: '/notes/1' }],
   },
 ]
 
@@ -14,7 +12,7 @@ const configs = {
   title: '自己动手画 CPU',
   description: '华中科技大学计算机硬件系统设计（自己动手画 CPU）相关资料和 Logisim 实现',
   repo: 'csfive/HUST-CPU',
-  umamiId: '62e218f7-b76d-4583-b861-1bcc0b40ebad',
+  umamiId: '24db664e-3d43-45c4-a63c-3d8e5981a873',
   chineseFont:
     'https://chinese-fonts-cdn.deno.dev/packages/lxgwwenkaibright/dist/LXGWBright-Medium/result.css',
   googleFont:
