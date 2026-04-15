@@ -2,7 +2,7 @@ import { defineConfig, type DefaultTheme, type HeadConfig } from 'vitepress'
 
 const sidebar: DefaultTheme.Sidebar = [
   {
-    items: [{ text: '01. 新手上路实验', link: '/notes/1' }],
+    items: [{ text: '01. 新手上路实验', link: '/notes/01' }],
   },
 ]
 
