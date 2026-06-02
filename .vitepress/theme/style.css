@@ -6,3 +6,22 @@
   --vp-c-brand-3: var(--vp-c-green-3);
   --vp-c-brand-soft: var(--vp-c-green-soft);
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--vp-c-bg-soft);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--vp-c-divider);
+  border-radius: 5px;
+  border: 2px solid var(--vp-c-bg-soft);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--vp-c-text-3);
+}
