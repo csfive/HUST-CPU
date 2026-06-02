@@ -1,4 +1,5 @@
 import { defineConfig, type DefaultTheme, type HeadConfig } from 'vitepress'
+import { ImagePreviewPlugin } from 'vitepress-plugin-image-preview'
 
 const sidebar: DefaultTheme.Sidebar = [
   {
@@ -12,7 +13,7 @@ const configs = {
   title: '自己动手画 CPU',
   description: '华中科技大学计算机硬件系统设计（自己动手画 CPU）相关资料和 Logisim 实现',
   repo: 'csfive/HUST-CPU',
-  umamiId: '24db664e-3d43-45c4-a63c-3d8e5981a873',
+  umamiId: '',
   chineseFont:
     'https://chinese-fonts-cdn.netlify.app/packages/lxgwwenkaibright/dist/LXGWBright-Medium/result.css',
   googleFont:
@@ -40,6 +41,9 @@ export default defineConfig({
     ...getLabel(),
   },
   head: getHead(),
+  vite: {
+    plugins: [ImagePreviewPlugin()],
+  },
 })
 
 function getHead() {
